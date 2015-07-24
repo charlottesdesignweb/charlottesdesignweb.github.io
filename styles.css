@@ -1,0 +1,275 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+	background: url(background/zenBG-2.png);
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+
+}
+
+h1 {
+    color: silver;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.6);
+    font-size: 170px;
+    font-style: italic, bold;
+    font-family: 'Bad Script', cursive;
+    margin: .1em;
+    line-height: 1.4;
+}
+
+h2 {
+    color: silver;
+    font-size: 28px;
+    font-style: italic, bold;
+    font-family: 'Bad Script', cursive;
+    margin:0;
+}
+
+h3 {
+    color: rgb(200,27,43);
+    font-size: 34px;
+    font-style: italic, bold;
+    font-family: 'Bad Script', cursive;
+    margin:0;
+}
+p {
+    color: silver;
+    font-size: 22px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin:0;
+}
+
+a {
+	color: silver;
+}
+
+
+a:hover {
+	color: silver;
+}
+
+.container {
+    padding-top: 1em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+
+}
+
+/* Page structure
+------------------------------------------*/
+.align-left {
+    float: left;
+    margin: 0 .5em 5em 0;
+    line-height: 1.5;
+    display: block;
+}
+header,
+.wrapper,
+footer {
+	margin: 0 auto;
+padding: 0 auto;
+width:88%;
+max-width: 960px;
+}
+
+
+
+.wrapper {
+    background: rgba(4,3,4,.4);
+}
+
+
+
+/* Navigation
+------------------------------------------*/
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right: .5em;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ce1b2c;
+    background: black;
+    padding: .5em 1em;
+    border-radius: 15px 4px;
+    transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: black;
+    border-radius: 25px;
+}
+
+/* Transform
+-------------------------------------*/
+
+.rotate img {
+    transition: all 1s ease-in-out;
+}
+
+.rotate:hover img{
+    border-radius: 50%;
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+}
+
+.scale img {
+    transition: all 1s ease-in-out;
+}
+
+.scale:hover img {
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -o-transform: scale(.8);
+    transition: scale(.8);
+}
+
+.skew img {
+    transition: all 1s ease-in-out;
+}
+
+.skew:hover img{
+    -ms-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(360deg);
+    transition: all 1s ease-in-out;
+}
+
+/* Bullets
+-------------------------------------*/
+
+.list--no-bullets {
+    padding:0;
+    list-style: none;
+}
+
+.bullet {
+    background: url(images/bullet.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin: .2em .5em .1em 1em;
+}
+
+/* Slideshow
+------------------------------------------*/
+
+.rslides-container {
+
+    border-radius:8px;
+    position: relative;
+    margin: 0 0 1em 0;
+    border: solid 1px #eee;
+    padding: 0.375em;
+    background: #fff;
+    max-width: 640px;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.rslides img {
+    float: left;
+    width:100%;
+}
+
+/* Slideshow navigator arrows. */
+
+a.rslides_nav {
+    padding: 0.25em;
+    line-height: 1;
+}
+
+a.rslides_nav.prev {
+    float: left;
+}
+
+a.rslides_nav.next {
+    float: right;
+}
+
+a.rslides_nav:hover {
+    text-decoration: none;
+}
+
+/* Slideshow position indicator tabs. */
+
+.rslides_tabs {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.rslides_tabs li {
+    margin: 0.375em 0.25em 0;
+    display: inline-block;
+}
+
+.rslides_tabs a {
+    text-indent: -9999px;
+    font-size:12px;
+    border-radius:50%;
+    display: block;
+    border: 1px solid;
+    border-color: #ccc;
+    background: #eee;
+    width: 1em;  // 12px
+height: 1em; // 12px
+}
+
+.rslides_tabs a:hover {
+    border-color: #000;
+}
+
+/* Highlight the position indicator tab of currently active slide. */
+
+.rslides_here a {
+    background: #e3e3e3;
+}
+
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
